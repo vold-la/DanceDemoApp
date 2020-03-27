@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="#000000">
+
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="#000000">
+
+
+        <ImageView
+            android:id="@+id/img_center"
+            android:contentDescription="@string/desc"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:alpha="0"
+            android:src="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.45"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/d1"
+            android:contentDescription="@string/desc"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/buttonsuphand"
+            app:layout_constraintCircle="@+id/img_center"
+            app:layout_constraintCircleAngle="0"
+            app:layout_constraintCircleRadius="60dp"
+            android:background="@color/colorPrimaryDark"/>
+
+        <ImageView
+            android:id="@+id/d2"
+            android:contentDescription="@string/desc"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/buttons2"
+            app:layout_constraintCircle="@+id/img_center"
+            app:layout_constraintCircleAngle="90"
+            app:layout_constraintCircleRadius="60dp"
+            android:background="@android:color/holo_purple"/>
+
+        <ImageView
+            android:id="@+id/d3"
+            android:contentDescription="@string/desc"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/buttons3"
+            app:layout_constraintCircle="@+id/img_center"
+            app:layout_constraintCircleAngle="180"
+            app:layout_constraintCircleRadius="60dp"
+            android:background="@android:color/holo_blue_dark"/>
+        <ImageView
+            android:id="@+id/d4"
+            android:contentDescription="@string/desc"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/buttons3"
+            app:layout_constraintCircle="@+id/img_center"
+            app:layout_constraintCircleAngle="270"
+            app:layout_constraintCircleRadius="60dp"
+            android:background="@android:color/holo_blue_light"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+        <VideoView
+            android:id="@+id/simpleVideoView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
